@@ -1,0 +1,45 @@
+.accordion {
+    background-color: var(--primary);
+    color: #fff;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.acorddion__icon{
+    transition: transform 0.3s ease-in-out;
+}
+.acorddion__icon.is-active{
+   transform: rotate(-180deg);
+}
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #1d61d5;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  .acorddion__title{
+    font-family: sans-serif;
+  }
+  .acorddion__body{
+      font-family: sans-serif;
+      text-align: justify;
+      line-height: 1.5rem;
+  }
+  

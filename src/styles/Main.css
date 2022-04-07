@@ -1,0 +1,81 @@
+.cursos-container{
+    padding: 16px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+.cursos--select{
+    width: 100%;
+    margin-bottom: 4px;
+    font-size: 14px;
+    border: 1px solid #dadce0;
+    padding: 8px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cursos--select:hover{
+    background-color: #f2f3f4;
+}
+
+.cursos--select:focus{
+    box-shadow: 0 0 0 3.2px rgb(0 123 255 / 25%);
+    background-color: #fff;
+    border: 1px solid #80bdff;
+    outline: none;
+}
+
+.btn-add-user{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: fixed;
+    right: 3.5rem;
+    bottom: 7rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-add-user:hover{
+    background-color: #1d61d5;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 0 8px;
+    gap: 8px;
+    overflow-y: auto;
+    padding-bottom: 60px;
+}
+
+@media (min-width:350px){
+    .cursos-container{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .cursos--select{
+        width: auto;
+    }
+}
+
+@media (min-width:450px){
+    .cursos-container{
+        justify-content: flex-start;
+        padding: 16px 29px;
+    }
+    .cursos--select{
+        font-size: 1rem;
+        margin-right: 30px;
+    }
+    .card-container{
+        padding: 0 16px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
